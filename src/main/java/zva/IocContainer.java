@@ -12,7 +12,7 @@ public class IocContainer {
         if (function != null) {
             return (T) function.apply(args);
         }
-        throw new IllegalArgumentException("No registration for key: " + key);
+        throw new IllegalArgumentException("!!! No registration for key: " + key);
     }
 
     public <T> void register(String key, Function<Object[], T> function) {
